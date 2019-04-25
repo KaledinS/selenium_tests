@@ -1,4 +1,4 @@
-package tests;
+package automationpractice.com.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class ContactFormTest extends TestBase{
     @Test
-    public  void testContact() {
+    public void testContact() {
         driver.findElement(By.linkText("Contact us")).click();
         new Select(driver.findElement(By.id("id_contact"))).selectByVisibleText("Customer service");
         driver.findElement(By.id("email")).sendKeys("mail@mail.com");

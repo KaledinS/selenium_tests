@@ -1,8 +1,11 @@
-package tests;
+package automationpractice.com.tests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -18,10 +21,14 @@ public class ProductTests extends TestBase {
         Random rand = new Random();
         int i = rand.nextInt(products.size());
         WebElement element = products.get(i);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         Actions build = new Actions(driver);
         build.moveToElement(element).build().perform();
         driver.findElement(By.xpath("//*[@id=\"homefeatured\"]/li["+(1+i)+"]/div/div[2]/div[2]/a[1]/span")).click();
-        driver.findElement(By.cssSelector(".continue")).click();
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".continue")));
+        el.click();
         Assert.assertTrue(driver.findElement(By.className("ajax_cart_quantity")).isDisplayed());
+
     }
 }

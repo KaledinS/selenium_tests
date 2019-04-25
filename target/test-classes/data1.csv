@@ -1,0 +1,52 @@
+<list>
+  <automationpractice.com.model.DataRegistration>
+    <firstName>test 0</firstName>
+    <lastName>test 0</lastName>
+    <password>test 0</password>
+    <company>test 0</company>
+    <adress>test 0</adress>
+    <city>test 0</city>
+    <postcode>test 0</postcode>
+    <phoneMobile>test 0</phoneMobile>
+  </automationpractice.com.model.DataRegistration>
+  <automationpractice.com.model.DataRegistration>
+    <firstName>test 1</firstName>
+    <lastName>test 1</lastName>
+    <password>test 1</password>
+    <company>test 1</company>
+    <adress>test 1</adress>
+    <city>test 1</city>
+    <postcode>test 1</postcode>
+    <phoneMobile>test 1</phoneMobile>
+  </automationpractice.com.model.DataRegistration>
+  <automationpractice.com.model.DataRegistration>
+    <firstName>test 2</firstName>
+    <lastName>test 2</lastName>
+    <password>test 2</password>
+    <company>test 2</company>
+    <adress>test 2</adress>
+    <city>test 2</city>
+    <postcode>test 2</postcode>
+    <phoneMobile>test 2</phoneMobile>
+  </automationpractice.com.model.DataRegistration>
+  <automationpractice.com.model.DataRegistration>
+    <firstName>test 3</firstName>
+    <lastName>test 3</lastName>
+    <password>test 3</password>
+    <company>test 3</company>
+    <adress>test 3</adress>
+    <city>test 3</city>
+    <postcode>test 3</postcode>
+    <phoneMobile>test 3</phoneMobile>
+  </automationpractice.com.model.DataRegistration>
+  <automationpractice.com.model.DataRegistration>
+    <firstName>test 4</firstName>
+    <lastName>test 4</lastName>
+    <password>test 4</password>
+    <company>test 4</company>
+    <adress>test 4</adress>
+    <city>test 4</city>
+    <postcode>test 4</postcode>
+    <phoneMobile>test 4</phoneMobile>
+  </automationpractice.com.model.DataRegistration>
+</list>
