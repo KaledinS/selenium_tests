@@ -1,20 +1,32 @@
 package automationpractice.com.model;
 
+import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 import java.util.Objects;
 @XStreamAlias("data")
 public class DataRegistration {
+    @Expose
     private String firstName;
+    @Expose
     private String lastName;
+    @Expose
     private String password;
+    @Expose
     private String company;
+    @Expose
     private String adress;
+    @Expose
     private String city;
+    @Expose
     private String postcode;
+    @Expose
     private String phoneMobile;
+    @Expose
     private String phone;
+    @Expose
     private String aliasAdress;
+    @Expose
     private String email;
 
 

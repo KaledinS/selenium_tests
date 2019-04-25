@@ -55,7 +55,7 @@ public class DataRegistrationGenerator {
     private void saveAsJson(List<DataRegistration> dataRegistrations, File file) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
         String json = gson.toJson(dataRegistrations);
-        try(Writer writer= new FileWriter(file);){
+        try(Writer writer= new FileWriter(file)){
             writer.write(json);
         }
     }
@@ -94,13 +94,14 @@ public class DataRegistrationGenerator {
                     + "." + RandomStringUtils.randomAlphabetic(2);
             String city = RandomStringUtils.randomAlphabetic(10);
             String company = RandomStringUtils.randomAlphabetic(10);
-            String s = RandomStringUtils.randomAlphanumeric(10);
+            String adress = RandomStringUtils.randomAlphanumeric(20);
             String postcode = RandomStringUtils.randomNumeric(5);
             String phoneMobile = RandomStringUtils.randomNumeric(10);
+            String password = RandomStringUtils.randomAlphabetic(10);
 
             dataRegistrations.add(new DataRegistration().setFirstName(name).setLastName(lastname).setEmail(email)
-                    .setPassword(s).setCompany(company)
-                    .setAdress(s).setCity(city)
+                    .setPassword(password).setCompany(company)
+                    .setAdress(adress).setCity(city)
                     .setPostcode(postcode).setPhoneMobile(phoneMobile));
 
         }
