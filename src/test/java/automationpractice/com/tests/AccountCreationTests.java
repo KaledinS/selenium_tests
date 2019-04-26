@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 
 public class AccountCreationTests extends TestBase {
 
-    @Test(dataProvider = "validGroups")
+    @Test(dataProvider = "validDataRegistrations")
     public void createAccountTest(DataRegistration dataRegistration) {
         driver.findElement(By.linkText("Sign in")).click();
         driver.findElement(By.id("email_create")).sendKeys(dataRegistration.getEmail());
@@ -54,7 +54,7 @@ public class AccountCreationTests extends TestBase {
     }
 
     @DataProvider
-    public Iterator<Object[]> validGroups() throws IOException {
+    public Iterator<Object[]> validDataRegistrations() throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/data.xml")))) {
             String xml = "";
             String line = reader.readLine();
@@ -64,8 +64,8 @@ public class AccountCreationTests extends TestBase {
             }
             XStream xstream = new XStream();
             xstream.processAnnotations(DataRegistration.class);
-            List<DataRegistration> groups = (List<DataRegistration>) xstream.fromXML(xml);
-            return groups.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+            List<DataRegistration> dataRegistrations = (List<DataRegistration>) xstream.fromXML(xml);
+            return dataRegistrations.stream().map((d) -> new Object[]{d}).collect(Collectors.toList()).iterator();
         }
     }
 
