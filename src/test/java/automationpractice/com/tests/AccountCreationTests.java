@@ -1,11 +1,9 @@
 package automationpractice.com.tests;
 
+import automationpractice.com.Helper.AccountHelper;
+import automationpractice.com.Helper.NavigationHelper;
 import automationpractice.com.model.DataRegistration;
 import com.thoughtworks.xstream.XStream;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -15,42 +13,34 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Random;
 import java.util.stream.Collectors;
 
+import static org.testng.Assert.assertEquals;
 
-public class AccountCreationTests extends TestBase {
+
+public class AccountCreationTests extends  TestBase {
+       AccountHelper account = new AccountHelper();
+       NavigationHelper navigate = new NavigationHelper();
 
     @Test(dataProvider = "validDataRegistrations")
     public void createAccountTest(DataRegistration dataRegistration) {
-        driver.findElement(By.linkText("Sign in")).click();
-        driver.findElement(By.id("email_create")).sendKeys(dataRegistration.getEmail());
-        driver.findElement(By.id("SubmitCreate")).click();
-        driver.findElement(By.id("id_gender1")).click();
-        driver.findElement(By.id("customer_firstname")).sendKeys(dataRegistration.getFirstName());
-        driver.findElement(By.id("customer_lastname")).sendKeys(dataRegistration.getLastName());
-        driver.findElement(By.id("passwd")).sendKeys(dataRegistration.getPassword());
-        new Select(driver.findElement(By.id("days"))).selectByVisibleText(getDayFromList());
-        new Select(driver.findElement(By.id("months"))).selectByVisibleText(getMonthFromList());
-        new Select(driver.findElement(By.id("years"))).selectByVisibleText(getYearFromList());
-        driver.findElement(By.id("firstname")).sendKeys(dataRegistration.getFirstName());
-        driver.findElement(By.id("lastname")).sendKeys(dataRegistration.getLastName());
-        driver.findElement(By.id("company")).sendKeys(dataRegistration.getCompany());
-        driver.findElement(By.id("address1")).sendKeys(dataRegistration.getAdress());
-        driver.findElement(By.id("city")).sendKeys(dataRegistration.getCity());
-        new Select(driver.findElement(By.id("id_state"))).selectByVisibleText(getStateFromList());
-        driver.findElement(By.id("postcode")).sendKeys(dataRegistration.getPostcode());
-        new Select(driver.findElement(By.id("id_country"))).selectByVisibleText("United States");
-        driver.findElement(By.id("phone_mobile")).sendKeys(dataRegistration.getPhoneMobile());
-        driver.findElement(By.id("alias")).sendKeys(dataRegistration.getAdress());
-        driver.findElement(By.id("submitAccount")).click();
+        navigate.goTo("Sign in");
+        account.createAccount(dataRegistration.getEmail());
+        account.chooseGender();
+        account.name(dataRegistration.getFirstName(),dataRegistration.getLastName());
+        account.password(dataRegistration.getPassword());
+        account.birthDate();
+        account.adress(dataRegistration.getFirstName(),dataRegistration.getLastName(),dataRegistration.getCompany()
+        ,dataRegistration.getAdress(),dataRegistration.getCity(),dataRegistration.getPostcode());
+        account.phone(dataRegistration.getPhoneMobile(),dataRegistration.getAdress());
+        account.submitAccount();
 
-        String actualAccount = driver.findElement(By.className("account")).findElement(By.tagName("span")).getText();
+        String actualAccount = account.actualAccount();
         String expectedAccount = dataRegistration.getFirstName() + " " + dataRegistration.getLastName();
 
-        Assert.assertEquals(actualAccount, expectedAccount);
+        assertEquals(actualAccount, expectedAccount);
 
-        driver.findElement(By.linkText("Sign out")).click();
+        navigate.goTo("Sign out");
     }
 
     @DataProvider
@@ -69,35 +59,7 @@ public class AccountCreationTests extends TestBase {
         }
     }
 
-    public String getStateFromList() {
-        WebElement element = driver.findElement(By.id("id_state"));
-        Select select = new Select(element);
-        List<WebElement> list = select.getOptions();
-        Random r = new Random();
-        return list.get(r.nextInt((list.size() - 1) + 1)).getText();
-    }
 
-    public String getDayFromList() {
-        WebElement element = driver.findElement(By.id("days"));
-        Select select = new Select(element);
-        List<WebElement> list = select.getOptions();
-        Random r = new Random();
-        return list.get(r.nextInt((list.size() - 1) + 1)).getText();
-    }
 
-    public String getMonthFromList() {
-        WebElement element = driver.findElement(By.id("months"));
-        Select select = new Select(element);
-        List<WebElement> list = select.getOptions();
-        Random r = new Random();
-        return list.get(r.nextInt((list.size() - 1) + 1)).getText();
-    }
 
-    public String getYearFromList() {
-        WebElement element = driver.findElement(By.id("years"));
-        Select select = new Select(element);
-        List<WebElement> list = select.getOptions();
-        Random r = new Random();
-        return list.get(r.nextInt((list.size() - 1) + 1)).getText();
-    }
 }

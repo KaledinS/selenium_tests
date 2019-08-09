@@ -88,6 +88,7 @@ public class DataRegistration {
     public String getEmail() {
         return email;
     }
+
     public String getFirstName() {
         return firstName;
     }

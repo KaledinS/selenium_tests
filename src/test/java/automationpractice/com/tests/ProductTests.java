@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 import java.util.List;
 import java.util.Random;
 
+import static org.testng.Assert.*;
+
 public class ProductTests extends TestBase {
     @Test
     public void testProductsCart() {
@@ -28,7 +30,7 @@ public class ProductTests extends TestBase {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement el = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".continue")));
         el.click();
-        Assert.assertTrue(driver.findElement(By.className("ajax_cart_quantity")).isDisplayed());
+        assertTrue(driver.findElement(By.className("ajax_cart_quantity")).isDisplayed());
 
     }
 }
