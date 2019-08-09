@@ -24,9 +24,9 @@ public class AccountHelper extends TestBase {
         driver.findElement(By.id("customer_lastname")).sendKeys(lastName);
     }
 
-    public void password(String password) {
-        driver.findElement(By.id("passwd")).sendKeys(password);
-    }
+  //  public void password(String password) {
+  //      driver.findElement(By.id("passwd")).sendKeys(password);
+   // }
 
     public void birthDate() {
         new Select(driver.findElement(By.id("days"))).selectByVisibleText(getDayFromList());

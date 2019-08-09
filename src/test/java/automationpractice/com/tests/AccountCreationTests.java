@@ -1,6 +1,7 @@
 package automationpractice.com.tests;
 
 import automationpractice.com.Helper.AccountHelper;
+import automationpractice.com.Helper.AppHelper;
 import automationpractice.com.Helper.NavigationHelper;
 import automationpractice.com.model.DataRegistration;
 import com.thoughtworks.xstream.XStream;
@@ -21,6 +22,7 @@ import static org.testng.Assert.assertEquals;
 public class AccountCreationTests extends  TestBase {
        AccountHelper account = new AccountHelper();
        NavigationHelper navigate = new NavigationHelper();
+       AppHelper app = new AppHelper();
 
     @Test(dataProvider = "validDataRegistrations")
     public void createAccountTest(DataRegistration dataRegistration) {
@@ -28,7 +30,7 @@ public class AccountCreationTests extends  TestBase {
         account.createAccount(dataRegistration.getEmail());
         account.chooseGender();
         account.name(dataRegistration.getFirstName(),dataRegistration.getLastName());
-        account.password(dataRegistration.getPassword());
+        app.password(dataRegistration.getPassword());
         account.birthDate();
         account.adress(dataRegistration.getFirstName(),dataRegistration.getLastName(),dataRegistration.getCompany()
         ,dataRegistration.getAdress(),dataRegistration.getCity(),dataRegistration.getPostcode());

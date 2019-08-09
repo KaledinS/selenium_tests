@@ -1,19 +1,27 @@
 package automationpractice.com.tests;
 
+import automationpractice.com.Helper.AppHelper;
+import automationpractice.com.Helper.LoginHelper;
+import automationpractice.com.Helper.NavigationHelper;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
 public class LoginTest extends TestBase {
+    AppHelper app = new AppHelper();
+    NavigationHelper navigate = new NavigationHelper();
+    LoginHelper login = new LoginHelper();
+
     @Test
-    public  void testLogin(){
-        driver.findElement(By.linkText("Sign in")).click();
-        driver.findElement(By.id("email")).sendKeys("test_automationpractice@mail.ru");
-        driver.findElement(By.id("passwd")).sendKeys("password");
-        driver.findElement(By.name("SubmitLogin")).click();
+    public void testLogin() {
+
+        navigate.goTo("Sign in");
+        app.email("test_automationpractice@mail.ru");
+        app.password("password");
+        login.singIn();
         assertTrue(isElementPresent(By.className("logout")));
-        driver.findElement(By.linkText("Sign out")).click();
+        login.singOut();
         assertTrue(isElementPresent(By.id("login_form")));
     }
 }

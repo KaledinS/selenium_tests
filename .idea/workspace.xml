@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db8d0cbf-2d5e-4dd6-acab-4c6b9cf34585" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/AccountHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/NavigationHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/AppHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/ContactFormHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/LoginHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automationpractice/com/model/DataRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/model/DataRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/AccountHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/AccountHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/AccountCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/AccountCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ContactFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ContactFormTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ProductTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ProductTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/selenium-tests.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/automationpractice/com/Helper/AccountHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/automationpractice/com/Helper/AccountHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/automationpractice/com/model/DataRegistration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/automationpractice/com/model/DataRegistration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/automationpractice/com/tests/AccountCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/automationpractice/com/tests/AccountCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/automationpractice/com/tests/ProductTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/automationpractice/com/tests/ProductTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/automationpractice/com/tests/ContactFormTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/automationpractice/com/tests/ContactFormTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/automationpractice/com/tests/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/automationpractice/com/tests/LoginTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,23 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/AccountCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/NavigationHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="306">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/model/DataRegistration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+            <state relative-caret-position="2108">
+              <caret line="149" selection-start-line="149" selection-end-line="149" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,17 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ContactFormTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,12 +68,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ProductTests.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/ContactFormHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            <state relative-caret-position="170">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/LoginTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ProductTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/LoginHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/AccountHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="340">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,22 +130,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/TestClass.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/AppHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/generators/DataRegistrationGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="92" column="65" selection-start-line="92" selection-start-column="65" selection-end-line="92" selection-end-column="65" />
+            <state relative-caret-position="153">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="476">
+              <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -168,17 +176,20 @@
         <option value="$PROJECT_DIR$/src/test/java/model/DataRegistration.java" />
         <option value="$PROJECT_DIR$/src/test/java/generators/DataRegistrationGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/DataRegistrationGenerator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ContactFormTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/TestClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/generators/DataRegistrationGenerator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ProductTests.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/model/DataRegistration.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/AccountHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/ContactFormHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/AppHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/AccountCreationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/LoginHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ContactFormTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ProductTests.java" />
       </list>
     </option>
   </component>
@@ -201,7 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,7 +303,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,7 +331,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AccountCreationTests (1)">
+  <component name="RunManager" selected="TestNG.ContactFormTest">
     <configuration name="DataRegistrationGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="automationpractice.com.generators.DataRegistrationGenerator" />
       <module name="selenium-tests" />
@@ -328,19 +339,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="automationpractice.com.generators.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="automationpractice.com.tests.TestClass" />
-      <module name="selenium-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="automationpractice.com.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -365,16 +363,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountCreationTests and 2 more" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-tests" />
+      <option name="TEST_OBJECT" value="PATTERN" />
+      <properties />
+      <listeners />
+      <patterns>
+        <pattern testClass="automationpractice.com.tests.AccountCreationTests" />
+        <pattern testClass="automationpractice.com.tests.ContactFormTest" />
+        <pattern testClass="automationpractice.com.tests.LoginTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="automationpractice.com.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="PACKAGE_NAME" value="automationpractice.com.tests" />
+      <option name="MAIN_CLASS_NAME" value="automationpractice.com.tests.ContactFormTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -418,19 +430,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.DataRegistrationGenerator" />
-      <item itemvalue="Application.TestClass" />
       <item itemvalue="TestNG.AccountCreationTests (1)" />
-      <item itemvalue="TestNG.LoginTest (1)" />
       <item itemvalue="TestNG.TestClass" />
       <item itemvalue="TestNG.ProductTests" />
+      <item itemvalue="TestNG.ContactFormTest" />
+      <item itemvalue="TestNG.AccountCreationTests and 2 more" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactFormTest" />
         <item itemvalue="TestNG.AccountCreationTests (1)" />
+        <item itemvalue="TestNG.AccountCreationTests and 2 more" />
         <item itemvalue="TestNG.ProductTests" />
         <item itemvalue="TestNG.TestClass" />
-        <item itemvalue="Application.TestClass" />
-        <item itemvalue="TestNG.LoginTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -448,15 +460,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountCreationTests_(1) - 2019.08.07 at 01h 17m 04s.xml">
-      <configuration name="AccountCreationTests (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountCreationTests_(1) - 2019.08.07 at 01h 19m 59s.xml">
-      <configuration name="AccountCreationTests (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountCreationTests_(1) - 2019.08.07 at 01h 29m 28s.xml">
-      <configuration name="AccountCreationTests (1)" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AccountCreationTests_(1) - 2019.08.07 at 01h 37m 05s.xml">
       <configuration name="AccountCreationTests (1)" configurationId="TestNG" />
     </history-entry>
@@ -478,12 +481,20 @@
     <history-entry file="AccountCreationTests_(1) - 2019.08.07 at 02h 49m 55s.xml">
       <configuration name="AccountCreationTests (1)" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ContactFormTest - 2019.08.09 at 18h 17m 39s.xml">
+      <configuration name="ContactFormTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountCreationTests_and_2_more - 2019.08.09 at 19h 22m 34s.xml">
+      <configuration name="AccountCreationTests and 2 more" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountCreationTests_(1) - 2019.08.09 at 19h 25m 34s.xml">
+      <configuration name="AccountCreationTests (1)" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24360341" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17110874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -492,7 +503,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32949308" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32949308" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -511,7 +522,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34827045" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -520,7 +531,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32949308" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32949308" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -594,6 +605,26 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/data.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/NavigationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/TestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/generators/DataRegistrationGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
@@ -604,74 +635,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/TestClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/NavigationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/model/DataRegistration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+        <state relative-caret-position="2108">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ContactFormTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/ContactFormHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ProductTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/LoginHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="102">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/AccountHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="340">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/Helper/AppHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ContactFormTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -680,8 +716,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/AccountCreationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        <state relative-caret-position="306">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationpractice/com/tests/ProductTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
